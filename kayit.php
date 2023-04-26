@@ -12,9 +12,8 @@ if(isset($_POST["kaydet"])){
     $calistirekle = mysqli_query($baglanti,$ekle);
 
     if ($calistirekle) {
-        echo '<div class="alert alert-success" role="alert">
-        Kayit basarili bir sekilde eklendi
-      </div>';
+        header("Location: https://miracky.github.io/ImgeBuldan/");
+    exit;;
     }
     else{
         echo '<div class="alert alert-danger" role="alert">
